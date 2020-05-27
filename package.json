@@ -1,0 +1,14 @@
+{
+  "name": "git-tools",
+  "version": "0.0.1",
+  "description": "Scripts for common git actions",
+  "main": "index.js",
+  "bin": {
+    "test-all-branches": "./test-all-branches.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Kelley",
+  "license": "MIT"
+}
