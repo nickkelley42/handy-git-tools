@@ -10,15 +10,15 @@ async function get_branch_names() {
 
 async function main() {
 	let branches = await get_branch_names();
-	let failed_branches = await Promise.all(branches.map(async branch => {
+
+	let failed_branches = [];
+	for (let branch of branches) {
 		await command_wrapper(`git checkout ${branch}`);
 		let result = await command_wrapper('npm test');
 		if (result.code !== 0) {
-			return branch;
-		} else {
-			return false;
+			failed_branches.push(branch);
 		}
-	}).filter(res => res));
+	}
 
 	if (failed_branches.length > 0) {
 		console.log('Failing branches:');
