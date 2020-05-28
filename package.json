@@ -1,5 +1,5 @@
 {
-  "name": "git-tools",
+  "name": "handy-git-tools",
   "version": "0.0.1",
   "description": "Scripts for common git actions",
   "main": "index.js",
@@ -10,5 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nick Kelley",
-  "license": "MIT"
+  "license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nickkelley42/handy-git-tools.git"
+	}
 }
