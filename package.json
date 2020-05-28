@@ -1,8 +1,7 @@
 {
   "name": "handy-git-tools",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scripts for common git actions",
-  "main": "index.js",
   "bin": {
     "test-all-branches": "./test-all-branches.js"
   },
